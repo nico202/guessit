@@ -92,7 +92,7 @@ History
 - Added `Extended Surround` as new `audio_profile` possible value.
 - Added `EX` as new `audio_profile` possible value
 - Added `Opus` as new `audio_codec` possible value
-- Changed `size` output to return `guessit.Quantity` object.
+- Changed `size` output to return `guessit.Size` object.
 
 2.1.4 (2017-06-01)
 ------------------
