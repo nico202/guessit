@@ -24,7 +24,10 @@ french_alt_word_numeral_list = [
     'onze', 'douze', 'treize', 'quatorze', 'quinze', 'seize', 'dixsept', 'dixhuit', 'dixneuf', 'vingt'
 ]
 
-
+italian_word_numeral_list = [
+    'zero', 'uno', 'due', 'tre', 'quattro', 'cinque', 'sei', 'sette', 'otto', 'nove', 'dieci',
+    'undici', 'dodici', 'tredici', 'quattordici', 'quindici'
+]
 def __build_word_numeral(*args):
     """
     Build word numeral regexp from list.
@@ -48,7 +51,9 @@ def __build_word_numeral(*args):
     return re_
 
 
-word_numeral = __build_word_numeral(english_word_numeral_list, french_word_numeral_list, french_alt_word_numeral_list)
+word_numeral = __build_word_numeral(english_word_numeral_list,
+                                    french_word_numeral_list, french_alt_word_numeral_list,
+                                    italian_word_numeral_list)
 
 numeral = '(?:' + digital_numeral + '|' + roman_numeral + '|' + word_numeral + ')'
 
